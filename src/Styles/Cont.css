@@ -1,0 +1,29 @@
+.cont {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.overlaycontent {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -99;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.captionEle {
+  font-family: 'Poiret One', cursive;
+  line-height: 40px;
+  letter-spacing: 5px;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.captionBorder {
+  width: 100px;
+  height: 4px;
+}

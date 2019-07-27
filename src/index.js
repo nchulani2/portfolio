@@ -1,12 +1,35 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import smoothscroll from 'smoothscroll-polyfill';
+import App from './Components/App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const loader = document.body.querySelector('.loader');
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+class Index extends Component {
+  hideLoader = () => {
+    loader.classList.add('loader--remove');
+  };
+
+  componentDidMount = () => {
+    window.scrollTo(0, 0);
+    setTimeout(() => {
+      this.hideLoader();
+    }, 1000);
+    setTimeout(() => {
+      document.body.style.background = 'transparent';
+    }, 1200);
+
+    smoothscroll.polyfill();
+  };
+  render() {
+    return (
+      <div className="index">
+        <App />
+      </div>
+    );
+  }
+}
+
+setTimeout(() => {
+  ReactDOM.render(<Index />, document.querySelector('#root'));
+}, 2500);

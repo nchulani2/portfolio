@@ -1,0 +1,293 @@
+:root {
+  --primary-color: white;
+  --secondary-color: rgba(27, 36, 47, 0.85);
+}
+
+#projectsEle {
+  color: white;
+  text-align: left;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+/* -------------------------------------------------------------------------- */
+/* More Projects in Development */
+#projectsEle .moreSoon {
+  padding-top: 200px;
+  color: black;
+  text-align: center;
+}
+#projectsEle .moreSoon div {
+  position: absolute;
+  background: rgb(233, 75, 75);
+  border-radius: 50%;
+}
+#projectsEle .moreSoon h1 {
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+#projectsEle .moreSoon div:first-child {
+  top: 0;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+#projectsEle .moreSoon div:nth-child(2) {
+  top: 25%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+#projectsEle .moreSoon div:nth-child(3) {
+  top: 60%;
+  left: 50%;
+  width: 35px;
+  height: 35px;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+/* -------------------------------------------------------------------------- */
+
+#projectsEle ul {
+  padding-bottom: 60px;
+  background: var(--primary-color);
+}
+#projectsEle ul li {
+  position: relative;
+  width: 6px;
+  padding-top: 50px;
+  margin: 0 auto;
+  background: rgba(68, 70, 73, 0.8);
+  list-style: none;
+}
+#projectsEle ul li:first-child {
+  padding-top: 100px;
+}
+
+/* Boxes */
+#projectsEle ul li .boxEle {
+  position: relative;
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(27, 36, 47, 0.35);
+  box-shadow: 0px 0px 6px 3px rgba(27, 36, 47, 0.35);
+  bottom: 0;
+  text-align: center;
+  width: 400px;
+  padding: 1rem;
+  background: var(--secondary-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+#projectsEle ul li .boxEle:hover {
+  bottom: 10px;
+  -webkit-box-shadow: 0px 0px 10px 3px rgb(255, 75, 75);
+  box-shadow: 0px 0px 10px 3px rgb(255, 75, 75);
+}
+#projectsEle ul li .boxEle h3 {
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+}
+#projectsEle ul li .boxEle .backendImp {
+  margin-bottom: 0;
+}
+
+#projectsEle ul li .boxEle div {
+  padding-bottom: 10px;
+}
+#projectsEle ul li .boxEle div img {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+}
+#projectsEle ul li .boxEle .toolCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  align-content: flex-end;
+}
+#projectsEle ul li .boxEle .toolCont span {
+  margin: 5px;
+  border-radius: 80px;
+  padding: 7px;
+  background: black;
+}
+#projectsEle ul li .boxEle .projButton {
+  cursor: pointer;
+  padding: 10px;
+  outline: none;
+  margin: 5px 10px;
+  background: white;
+  font-family: 'Noto Sans KR', sans-serif;
+  border-radius: 8px;
+  color: black;
+  border: 1px solid white;
+  -webkit-box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 1);
+  box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#projectsEle ul li .boxEle .projButton:hover {
+  background: rgba(233, 75, 75, 1);
+  color: white;
+  border: 1px solid rgba(233, 75, 75, 1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Right Side */
+#projectsEle ul li:nth-child(odd) .boxEle {
+  left: 40px;
+  -webkit-transform: translate(200px, 0);
+  -ms-transform: translate(200px, 0);
+  transform: translate(200px, 0);
+}
+
+/* Left Side */
+#projectsEle ul li:nth-child(even) .boxEle {
+  left: -434px;
+  -webkit-transform: translate(-200px, 0);
+  -ms-transform: translate(-200px, 0);
+  transform: translate(-200px, 0);
+}
+
+/* Dots */
+#projectsEle ul li:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  background: inherit;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+
+/* Arrows Base */
+#projectsEle .boxEle:before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+/* Right Side Arrows */
+#projectsEle ul li:nth-child(odd) .boxEle:before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent var(--secondary-color) transparent transparent;
+}
+
+/* Left Side Arrows */
+#projectsEle ul li:nth-child(even) .boxEle:before {
+  right: -15px;
+  border-width: 8px 0px 8px 16px;
+  border-color: transparent transparent transparent var(--secondary-color);
+}
+
+/* Show Boxes */
+#projectsEle ul li.show .boxEle {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+#projectsEle ul li.show:after {
+  background: rgba(233, 75, 75, 1);
+}
+
+@media (max-width: 900px) {
+  #projectsEle ul li .boxEle {
+    width: 250px;
+  }
+
+  #projectsEle ul li:nth-child(even) .boxEle {
+    left: -284px;
+  }
+}
+
+@media (max-width: 600px) {
+  #projectsEle ul li {
+    margin-left: 20px;
+  }
+
+  #projectsEle ul li .boxEle {
+    width: calc(100vw - 90px);
+  }
+
+  #projectsEle ul li:nth-child(even) .boxEle {
+    left: 40px;
+  }
+
+  #projectsEle ul li:nth-child(even) .boxEle:before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent var(--secondary-color) transparent transparent;
+  }
+  #projectsEle .moreSoon h1 {
+    font-size: 25px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  #projectsEle .moreSoon div:first-child {
+    top: 0;
+    left: 25px;
+    width: 15px;
+    height: 15px;
+  }
+  #projectsEle .moreSoon div:nth-child(2) {
+    top: 25%;
+    left: 25px;
+    width: 25px;
+    height: 25px;
+  }
+  #projectsEle .moreSoon div:nth-child(3) {
+    top: 60%;
+    left: 25px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 450px) {
+  #projectsEle .moreSoon h1 {
+    font-size: 15px;
+  }
+}

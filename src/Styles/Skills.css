@@ -1,0 +1,33 @@
+.skillsEle {
+  color: #444649;
+  -webkit-transition: 0.1s all linear;
+  -o-transition: 0.1s all linear;
+  transition: 0.1s all linear;
+}
+.skillsEle #skillsGrid {
+  padding: 3% 0 8% 0;
+}
+.skillsEle #skillsGrid .ui.grid > .column:not(.row) {
+  padding: 3em 0;
+}
+.skillsEle .column .bottomGrids {
+  padding: 10% 0 16% 0;
+}
+
+.skillsEle .titleEle {
+  font-size: 25px;
+  font-family: 'Poiret One', cursive;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  margin: 0 auto 20px auto;
+  width: 150px;
+  line-height: 50px;
+  background: #e8e8e8;
+  border-radius: 4px;
+}
+
+.skillsEle div div .column .imageEle {
+  width: 80px;
+  height: 80px;
+  padding: 20px 0 10px 10;
+}

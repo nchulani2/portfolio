@@ -21,7 +21,12 @@ import '../Styles/Skills.css';
 const Skills = () => {
   return (
     <div className="skillsEle">
-      <h2>Hover over the particular skill for details</h2>
+      <h2
+        className="wow fadeInDown"
+        data-wow-delay="0.3s"
+        data-wow-duration="0.5s">
+        Hover over the particular skill for details
+      </h2>
       <div className="titleEle wow fadeIn" data-wow-delay="0.5s">
         Frontend
       </div>

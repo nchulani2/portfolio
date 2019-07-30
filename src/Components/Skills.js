@@ -141,7 +141,7 @@ const Skills = () => {
             <div className="eight wide column">
               <div className="toolCont">
                 <img className="imageEle" alt="Node.js" src={NodeImg} />
-                <span className="tooltiptext">Node.js</span>
+                <span className="tooltiptext">node.js</span>
               </div>
             </div>
             <div className="eight wide column">

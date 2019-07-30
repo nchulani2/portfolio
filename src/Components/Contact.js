@@ -60,7 +60,7 @@ export default class Contact extends React.Component {
               </button>
             </div>
           ) : (
-            <div className="formEle wow bounceInDown">
+            <div className="formEle wow bounceInUp">
               <h3 className="enquireEle">
                 Got a question? I'll respond within 24 hours!
                 <br />

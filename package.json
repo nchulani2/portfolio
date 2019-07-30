@@ -8,7 +8,7 @@
     "react-particles-js": "^2.7.0",
     "react-scripts": "3.0.1",
     "react-typist": "^2.0.5",
-    "smoothscroll-polyfill": "^0.4.4",
+    "smooth-scroll-into-view-if-needed": "^1.1.23",
     "wow.js": "^1.2.2"
   },
   "scripts": {

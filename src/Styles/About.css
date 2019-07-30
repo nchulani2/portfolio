@@ -34,7 +34,7 @@
   font-weight: bolder;
   font-size: 25px;
   line-height: 30px;
-  padding: 40px 0 50px 0;
+  padding: 40px 10px 50px 10px;
 }
 .aboutEle .appBox {
   display: -webkit-box;
@@ -49,12 +49,8 @@
   width: 100px;
   height: 150px;
 
-  background: #e94b4b; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #ffb000,
-    #e94b4b
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: #e94b4b; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -o-linear-gradient(top, #ffb000, #e94b4b);
   background: -webkit-gradient(
     linear,
     left top,
@@ -62,7 +58,6 @@
     from(#ffb000),
     to(#e94b4b)
   );
-  background: -webkit-linear-gradient(top, #ffb000, #e94b4b);
   background: -o-linear-gradient(top, #ffb000, #e94b4b);
   background: linear-gradient(
     to bottom,

@@ -3,14 +3,14 @@
   background: none;
   color: white;
   outline: none;
-  font-size: 1em;
-  padding-top: 1em;
+  font-size: 1.15em;
+  padding-top: 1.35em;
   height: 4.5em;
   width: 4.5em;
   background-color: rgb(233, 75, 75);
   position: fixed;
   left: 50%;
-  margin-left: -2.2em;
+  margin-left: -2.27em;
   top: -1.75em;
   -webkit-transition: all linear 0.25s;
   -o-transition: all linear 0.25s;
@@ -19,6 +19,7 @@
   cursor: pointer;
   z-index: 99;
 }
+
 .cn-button:hover {
   -webkit-transition: all linear 0.25s;
   -o-transition: all linear 0.25s;
@@ -217,12 +218,8 @@
 }
 
 .cn-wrapper li:nth-child(odd) a {
-  background: #e94b4b; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #f1c159,
-    #e94b4b
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: #e94b4b; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -o-linear-gradient(bottom, #f1c159, #e94b4b);
   background: -webkit-gradient(
     linear,
     left bottom,
@@ -230,7 +227,6 @@
     from(#f1c159),
     to(#e94b4b)
   );
-  background: -webkit-linear-gradient(bottom, #f1c159, #e94b4b);
   background: -o-linear-gradient(bottom, #f1c159, #e94b4b);
   background: linear-gradient(
     to top,
@@ -240,8 +236,8 @@
 }
 .cn-wrapper li:nth-child(even) a {
   background: #e75c5c; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #daac4b, #e94b4b);
   /* Chrome 10-25, Safari 5.1-6 */
+  background: -o-linear-gradient(bottom, #daac4b, #e94b4b);
   background: -webkit-gradient(
     linear,
     left bottom,
@@ -249,8 +245,6 @@
     from(#daac4b),
     to(#e94b4b)
   );
-  background: -webkit-linear-gradient(bottom, #daac4b, #e94b4b);
-  background: -o-linear-gradient(bottom, #daac4b, #e94b4b);
   background: linear-gradient(to top, #daac4b, #e94b4b);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -260,8 +254,8 @@
 .cn-wrapper li:not(.active) a:focus {
   color: #ee2d2d;
   background: white; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #ee2d2d, white);
   /* Chrome 10-25, Safari 5.1-6 */
+  background: -o-linear-gradient(bottom, #ee2d2d, white);
   background: -webkit-gradient(
     linear,
     left bottom,
@@ -269,8 +263,6 @@
     from(#ee2d2d),
     to(white)
   );
-  background: -webkit-linear-gradient(bottom, #ee2d2d, white);
-  background: -o-linear-gradient(bottom, #ee2d2d, white);
   background: linear-gradient(to top, #ee2d2d, white);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

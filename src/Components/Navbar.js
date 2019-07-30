@@ -1,4 +1,5 @@
 import React from 'react';
+import scrollIntoView from 'smooth-scroll-into-view-if-needed';
 import '../Styles/Navbar.css';
 
 export default class Navbar extends React.Component {
@@ -40,6 +41,7 @@ export default class Navbar extends React.Component {
     const skills = document.querySelector('.skills');
     const projects = document.querySelector('.projects');
     const contact = document.querySelector('.contact');
+
     if (anchor === '#about') {
       this.goIntoView(about, wrapper, overlay, buttonEle);
     } else if (anchor === '#skills') {
@@ -52,11 +54,15 @@ export default class Navbar extends React.Component {
   };
 
   goIntoView = (element, wrapper, overlay, buttonEle) => {
-    element.scrollIntoView({
-      behavior: 'smooth',
+    scrollIntoView(element, {
+      scrollMode: 'always',
       block: 'start',
-      inline: 'nearest'
+      inline: 'nearest',
+      duration: window.innerWidth > 499 ? 100 : 2500,
+      ease: t =>
+        t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t
     });
+
     buttonEle.innerHTML = '+';
     wrapper.classList.remove('opened-nav');
     overlay.classList.remove('on-overlay');

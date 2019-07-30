@@ -7,6 +7,7 @@
 .skillsEle h2 {
   font-family: 'Poiret One', cursive;
   margin-bottom: 50px;
+  padding: 0 40px;
   font-weight: bolder;
 }
 .skillsEle #skillsGrid {
@@ -82,4 +83,10 @@
   width: 80px;
   height: 80px;
   padding: 20px 0 10px 10;
+}
+
+@media (max-width: 499px) {
+  .skillsEle h2 {
+    font-size: 20px;
+  }
 }

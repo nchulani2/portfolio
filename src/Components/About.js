@@ -1,14 +1,19 @@
 import React from 'react';
+import scrollIntoView from 'smooth-scroll-into-view-if-needed';
 import myFace from '../Images/myface.png';
 import '../Styles/About.css';
 
 const goToContact = e => {
   e.preventDefault();
   const contactPage = document.querySelector('.contact');
-  contactPage.scrollIntoView({
-    behavior: 'smooth',
+
+  scrollIntoView(contactPage, {
+    scrollMode: 'always',
     block: 'start',
-    inline: 'nearest'
+    inline: 'nearest',
+    duration: window.innerWidth > 499 ? 100 : 2500,
+    // EaseInOutQuint Algo
+    ease: t => (t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t)
   });
 };
 
@@ -33,7 +38,7 @@ const About = () => {
             <em>(Express)</em> <strong>R</strong>
             <em>(React)</em> <strong>N</strong>
             <em>(Node.js)</em> stack. <br />
-            <a onClick={goToContact} className="infoContact" href="#contact">
+            <a className="infoContact" onClick={goToContact} href="#contact">
               Got an idea? Shoot me a message!
             </a>
             <i style={{ color: '#4183c4' }} className="smile outline icon" />

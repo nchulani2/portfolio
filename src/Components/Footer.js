@@ -1,18 +1,21 @@
 import React from 'react';
+import scrollIntoView from 'smooth-scroll-into-view-if-needed';
 import '../Styles/Footer.css';
 
 const goHome = e => {
   e.preventDefault();
   const Home = document.querySelector('.home');
 
-  Home.scrollIntoView({
-    behavior: 'smooth',
+  scrollIntoView(Home, {
+    scrollMode: 'always',
     block: 'start',
-    inline: 'nearest'
+    inline: 'nearest',
+    duration: window.innerWidth > 499 ? 100 : 2500,
+    ease: t => (t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t)
   });
 };
 
-const Footer = props => {
+const Footer = () => {
   return (
     <div className="footer">
       <h3 className="headBackUp">Shall we head back up?</h3>

@@ -12,8 +12,6 @@ import '../Styles/App.css';
 import WOW from 'wow.js';
 
 export default class App extends React.Component {
-  state = { atAbout: false };
-
   componentDidMount = e => {
     window.addEventListener('scroll', this.showNavBar);
     var wow = new WOW({
@@ -47,11 +45,11 @@ export default class App extends React.Component {
       <div>
         <div className="app animated fadeInRightBig delay-0s">
           {/* The classnames are to aid with selection through DOM and navbar*/}
-          <Page className="home" height="100vh">
+          <Page className="home" height="100vh" id="home">
             <Home />
           </Page>
 
-          <Page className="about" height="100%">
+          <Page className="about" height="100%" id="about">
             <Cont
               padding="150px 0 100px 0 "
               caption="ABOUT"
@@ -63,7 +61,7 @@ export default class App extends React.Component {
             </Cont>
           </Page>
 
-          <Page className="skills" height="100%">
+          <Page className="skills" height="100%" id="skills">
             <Cont
               padding="180px 0 180px 0 "
               caption="SKILLS"
@@ -74,7 +72,7 @@ export default class App extends React.Component {
               <Skills />
             </Cont>
           </Page>
-          <Page className="projects" height="100%">
+          <Page className="projects" height="100%" id="projects">
             <Cont
               padding="150px 0 200px 0 "
               caption="PROJECTS"
@@ -85,7 +83,7 @@ export default class App extends React.Component {
               <Projects />
             </Cont>
           </Page>
-          <Page className="contact" height="100%">
+          <Page className="contact" height="100%" id="contact">
             <Cont
               padding="150px 0 150px 0 "
               caption="CONTACT"

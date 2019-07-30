@@ -30,7 +30,7 @@ const Footer = props => {
         </a>
       </div>
       <div className="footerContainer">
-        © 2019 Copyright: <a href="#">naveenchulani</a>
+        © 2019 Copyright: <a href="https://nmchulani.me">naveenchulani</a>
       </div>
     </div>
   );

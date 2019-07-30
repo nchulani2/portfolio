@@ -32,4 +32,4 @@ class Index extends Component {
 
 setTimeout(() => {
   ReactDOM.render(<Index />, document.querySelector('#root'));
-}, 2500);
+}, 0);

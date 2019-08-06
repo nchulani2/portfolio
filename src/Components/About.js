@@ -1,6 +1,6 @@
 import React from 'react';
 import scrollIntoView from 'smooth-scroll-into-view-if-needed';
-import myFace from '../Images/myface.png';
+import myFace from '../Images/myface.jpg';
 import '../Styles/About.css';
 
 const goToContact = e => {

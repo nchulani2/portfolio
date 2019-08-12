@@ -83,7 +83,7 @@ export default class Projects extends React.Component {
                 <img
                   alt="navsearch"
                   className="ui image"
-                  src="https://media.giphy.com/media/UqHIt3qzO9vvg0H6wo/giphy.gif"
+                  src="https://media.giphy.com/media/dXKK1j6O3lpyjiNJTu/giphy.gif"
                 />
               </div>
               <div className="toolCont">
@@ -113,7 +113,7 @@ export default class Projects extends React.Component {
                 <img
                   alt="haisky"
                   className="ui image"
-                  src="https://media.giphy.com/media/RioD3hJddx5AlZhsMD/giphy.gif"
+                  src="https://media.giphy.com/media/SXIx3qGfiQ5Dq5O2j4/giphy.gif"
                 />
               </div>
               <div className="toolCont">

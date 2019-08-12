@@ -66,15 +66,20 @@
 /* -------------------------------------------------------------------------- */
 /* homebutton */
 /* -------------------------------------------------------------------------- */
-.homeEle .homeButton {
-  padding: 2%;
-}
 
-.homeEle .homeButton .homebuttonEle {
+.homeEle .flexContainer .buttonFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 2rem;
+}
+.homeEle .flexContainer .buttonFlex .homeButton .homebuttonEle {
   cursor: pointer;
   padding: 20px;
   outline: none;
-  margin: 2rem 2rem;
+  margin: 0 2rem;
   font-size: 20px;
   font-family: 'Poiret One', cursive;
   letter-spacing: 2px;
@@ -82,26 +87,26 @@
   animation-delay: 0.4s;
   background: transparent;
   color: white;
-  border: 2px solid white;
+  border: 1px solid white;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.homeEle .homeButton .homebuttonEle span {
+.homeEle .flexContainer .buttonFlex .homeButton .homebuttonEle span {
   padding-right: 10px;
 }
-.homeEle .homeButton .homebuttonEle i {
+.homeEle .flexContainer .buttonFlex .homeButton .homebuttonEle i {
   margin: 0;
-  color: rgba(233, 75, 75, 1);
+  color: rgba(233, 75, 75, 0.7);
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
-.homeEle .homeButton .homebuttonEle:hover {
-  background: rgba(233, 75, 75, 1);
+.homeEle .flexContainer .buttonFlex .homeButton .homebuttonEle:hover {
+  background: rgba(233, 75, 75, 0.8);
   color: white;
-  border: 2px solid rgba(233, 75, 75, 1);
+  border: 1px solid rgba(233, 75, 75, 1);
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition: all 0.2s ease-in-out;
@@ -109,13 +114,14 @@
   transition: all 0.2s ease-in-out;
 }
 
-.homeEle .homeButton .homebuttonEle:hover i {
+.homeEle .flexContainer .buttonFlex .homeButton .homebuttonEle:hover i {
   color: white;
   -webkit-transform: rotateZ(90deg);
   -ms-transform: rotate(90deg);
   transform: rotateZ(90deg);
 }
-.homeEle .homeButton .hideIt {
+
+.hideIt {
   display: none;
 }
 
@@ -180,143 +186,28 @@
 }
 
 /* -------------------------------------------------------------------------- */
-/* at medias */
-/* @media (max-width: 1200px) {
-} */
-/* @media (max-width: 1000px) {
-} */
-@media (max-width: 800px) {
-  .homeEle {
-    padding-top: 5%;
-  }
-  .typedText h3 {
-    font-size: 45px;
-  }
-  .typewriterEle {
-    font-size: 20px;
-  }
-  .homeEle .homeButton .homebuttonEle {
-    padding: 15px;
-  }
-}
-@media (max-width: 600px) {
-  .typedText h3 {
-    font-size: 30px;
-  }
-  .homeEle .homeButton .homebuttonEle {
-    font-size: 15px;
-    padding: 15px;
-  }
-}
-/* IPAD PRO */
-@media (max-width: 1025px) and (min-height: 1365px) {
-  .homeEle {
-    padding-top: 30%;
-  }
-}
-/* IPAD  */
-@media (max-width: 768px) and (min-height: 1023px) {
-  .homeEle {
-    padding-top: 25%;
-  }
-}
-@media (max-width: 415px) and (min-height: 735px) {
-  .homeEle {
-    padding-top: 5%;
-  }
-  .typedText h3 {
-    font-size: 20px;
-  }
-  .typewriterEle {
-    font-size: 15px;
-  }
-  .homeEle .homeButton .homebuttonEle {
-    margin: 1rem 2rem;
-  }
-}
-/* Pixel 2 XL */
-@media (max-width: 412px) and (min-height: 822px) {
-  .homeEle {
-    padding-top: 10%;
-  }
-  .typedText h3 {
-    font-size: 20px;
-  }
-  .typewriterEle {
-    font-size: 15px;
-  }
-  .homeEle .homeButton .homebuttonEle {
-    margin: 2rem 2rem;
-  }
-}
-/* Pixel 2 */
-/* @media (max-width: 412px) and (max-height: 732px) {
-} */
-@media (max-width: 376px) and (min-height: 811px) {
-  .homeEle {
-    padding-top: 5%;
-  }
-  .typedText h3 {
-    font-size: 20px;
-  }
-  .typewriterEle {
-    font-size: 15px;
-  }
-  .homeEle .homeButton .homebuttonEle {
-    margin: 2rem 2rem;
-  }
-}
-/* Iphone 6/7/8 */
-@media (max-width: 376px) and (min-height: 666px) {
-  .homeEle {
-    padding-top: 0;
-  }
-  .typedText h3 {
-    font-size: 20px;
-  }
-  .typewriterEle {
-    line-height: 30px;
-    font-size: 15px;
-    padding-top: 3vh;
-  }
-  .homeEle .homeButton .homebuttonEle {
-    padding: 10px;
-    margin: 1rem 2rem;
-  }
-}
-/* Galaxy S5 */
-@media (max-width: 361px) and (min-height: 640px) {
-  .homeEle {
-    padding-top: 0;
-  }
-  .typedText h3 {
-    font-size: 20px;
-  }
-  .typewriterEle {
-    font-size: 15px;
-    line-height: 3vh;
-    padding-top: 2vh;
-  }
-  .homeEle .homeButton .homebuttonEle {
-    margin: 0.5rem 2rem;
-  }
-}
 
-@media (max-width: 321px) and (min-height: 567px) {
-  .homeEle {
-    padding-top: 0;
-  }
-  .typedText h3 {
-    font-size: 10px;
-  }
+@media (max-width: 800px) {
   .typewriterEle {
-    font-size: 10px;
-    line-height: 20px;
-    padding-top: 2vh;
+    font-size: 20px;
   }
-  .homeEle .homeButton .homebuttonEle {
-    margin: 0.5rem 2rem;
-    font-size: 7px;
-    padding: 6px;
+  .homeEle .flexContainer .buttonFlex {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .homeEle .flexContainer .buttonFlex .homeButton .homebuttonEle {
+    padding: 15px;
+    font-size: 15px;
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 450px) {
+  .typewriterEle {
+    font-size: 15px;
+  }
+
+  .homeEle .flexContainer .buttonFlex .homeButton .homebuttonEle {
+    padding: 10px;
+    font-size: 10px;
   }
 }

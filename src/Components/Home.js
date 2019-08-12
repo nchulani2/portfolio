@@ -15,9 +15,11 @@ export default class Home extends Component {
     this.setState({ typeDelay: 0 });
   };
   typingDone = () => {
-    const homeButton = document.querySelector('.homebuttonEle');
-    homeButton.classList.remove('hideIt');
-    homeButton.classList.add('animated', 'flipInX', 'delay-0s');
+    const homeButtons = document.querySelectorAll('.homebuttonEle');
+    homeButtons.forEach(button => {
+      button.classList.remove('hideIt');
+      button.classList.add('animated', 'flipInX', 'delay-0s');
+    });
   };
 
   goToAbout = e => {
@@ -25,6 +27,19 @@ export default class Home extends Component {
     const about = document.querySelector('.about');
 
     scrollIntoView(about, {
+      scrollMode: 'if-needed',
+      block: 'start',
+      inline: 'nearest',
+      duration: window.innerWidth > 499 ? 100 : 1500,
+      ease: t =>
+        t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t
+    });
+  };
+  goToProjects = e => {
+    e.preventDefault();
+    const projects = document.querySelector('.projects');
+
+    scrollIntoView(projects, {
       scrollMode: 'if-needed',
       block: 'start',
       inline: 'nearest',
@@ -97,12 +112,21 @@ export default class Home extends Component {
             Full-stack Developer & Electrical Engineer
             <Cursor show={true} element="|" />
           </Typist>
-
-          <div className="homeButton">
-            <button className="homebuttonEle hideIt" onClick={this.goToAbout}>
-              <span>Take a look </span>
-              <i className="long arrow alternate right icon" />
-            </button>
+          <div className="buttonFlex">
+            <div className="homeButton">
+              <button className="homebuttonEle hideIt" onClick={this.goToAbout}>
+                <span>About me </span>
+                <i className="long arrow alternate right icon" />
+              </button>
+            </div>
+            <div className="homeButton">
+              <button
+                className="homebuttonEle hideIt"
+                onClick={this.goToProjects}>
+                <span>My Projects </span>
+                <i className="long arrow alternate right icon" />
+              </button>
+            </div>
           </div>
         </div>
       </div>

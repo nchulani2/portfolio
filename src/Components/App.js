@@ -43,7 +43,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="app animated fadeInRightBig delay-0s">
+        <div className="app animated bounceInRight fast delay-0s">
           {/* The classnames are to aid with selection through DOM and navbar*/}
           <Page className="home" height="100vh" id="home">
             <Home />

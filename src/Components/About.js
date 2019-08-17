@@ -1,6 +1,6 @@
 import React from 'react';
 import scrollIntoView from 'smooth-scroll-into-view-if-needed';
-import myFace from '../Images/myface.png';
+import bodyImage from '../Images/full_body.png';
 import '../Styles/About.css';
 
 const goToContact = e => {
@@ -26,15 +26,17 @@ const About = () => {
           data-wow-delay="0.5s"
           data-wow-duration="0.5s">
           <div className="myImage" data-wow-delay="0.4s">
-            <img alt="myFace" src={myFace} />
-            <div className="myFaceText">Hi!</div>
+            <img alt="myFace" src={bodyImage} />
+            <div className="circle" />
+            <div className="circle" />
+            <div className="circle" />
           </div>
           <div className="infoCont">
             I am an aspiring Full Stack developer with a degree in Electrical
             Engineering. I have a driven mindset towards learning new
             technologies as well as building applications with regards to REST
-            architecture. I am currently learning React in hopes of developing
-            applications that revolve around the <strong>M</strong>
+            architecture. I am currently building with React in hopes of
+            developing applications that revolve around the <strong>M</strong>
             <em>(MongoDB)</em> <strong>E</strong>
             <em>(Express)</em> <strong>R</strong>
             <em>(React)</em> <strong>N</strong>

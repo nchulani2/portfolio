@@ -5,7 +5,6 @@ import {
   JavascriptImg,
   ReactImg,
   jQueryImg,
-  SvgImg,
   SemanticImg,
   BootstrapImg,
   ReduxImg,
@@ -14,7 +13,9 @@ import {
   MongodbImg,
   MySQLImg,
   NpmImg,
-  GitImg
+  GitImg,
+  PhotoshopImg,
+  FigmaImg
 } from './ImageImports';
 import '../Styles/Skills.css';
 
@@ -84,8 +85,8 @@ const Skills = () => {
               </div>
               <div className="eight wide column">
                 <div className="toolCont">
-                  <img className="imageEle" alt="SVG" src={SvgImg} />
-                  <span className="tooltiptext">SVG</span>
+                  <img className="imageEle" alt="Redux" src={FigmaImg} />
+                  <span className="tooltiptext">Figma</span>
                 </div>
               </div>
             </div>
@@ -118,10 +119,16 @@ const Skills = () => {
         <div className="row">
           <div className="sixteen wide column">
             <div className="ui grid container">
-              <div className="sixteen wide column">
+              <div className="eight wide column">
                 <div className="toolCont">
                   <img className="imageEle" alt="Redux" src={ReduxImg} />
                   <span className="tooltiptext">Redux</span>
+                </div>
+              </div>
+              <div className="eight wide column">
+                <div className="toolCont">
+                  <img className="imageEle" alt="Redux" src={PhotoshopImg} />
+                  <span className="tooltiptext">Adobe Photoshop</span>
                 </div>
               </div>
             </div>

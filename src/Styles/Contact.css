@@ -83,6 +83,11 @@
   opacity: 0.6;
 }
 
+.contactEle .paddingEle .formEle .field .inputEle::-moz-placeholder {
+  color: grey;
+  opacity: 0.6;
+}
+
 .contactEle .paddingEle .formEle .field .inputEle::placeholder {
   color: grey;
   opacity: 0.6;

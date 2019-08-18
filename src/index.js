@@ -14,7 +14,7 @@ class Index extends Component {
     window.scrollTo(0, 0);
     setTimeout(() => {
       this.hideLoader();
-    }, 1000);
+    }, 500);
     setTimeout(() => {
       document.body.style.background = 'transparent';
     }, 1200);
@@ -31,4 +31,4 @@ class Index extends Component {
 
 setTimeout(() => {
   ReactDOM.render(<Index />, document.querySelector('#root'));
-}, 3000);
+}, 3500);

@@ -168,6 +168,8 @@
   -webkit-transform: translate(200px, 0);
   -ms-transform: translate(200px, 0);
   transform: translate(200px, 0);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 
@@ -177,6 +179,8 @@
   -webkit-transform: translate(-200px, 0);
   -ms-transform: translate(-200px, 0);
   transform: translate(-200px, 0);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 

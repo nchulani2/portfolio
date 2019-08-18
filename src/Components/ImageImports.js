@@ -4,7 +4,6 @@ import CssThreeImg from '../Images/icons/css3.png';
 import JavascriptImg from '../Images/icons/javascript.png';
 import ReactImg from '../Images/icons/react.png';
 import jQueryImg from '../Images/icons/jquery.png';
-import SvgImg from '../Images/icons/svg.png';
 import SemanticImg from '../Images/icons/semanticui.png';
 import BootstrapImg from '../Images/icons/bootstrap.png';
 import ReduxImg from '../Images/icons/redux.png';
@@ -14,6 +13,8 @@ import MongodbImg from '../Images/icons/mongodb.png';
 import MySQLImg from '../Images/icons/mysql.png';
 import NpmImg from '../Images/icons/npm.png';
 import GitImg from '../Images/icons/git.png';
+import PhotoshopImg from '../Images/icons/photoshop.png';
+import FigmaImg from '../Images/icons/figma.png';
 
 export {
   HtmlFiveImg,
@@ -21,7 +22,6 @@ export {
   JavascriptImg,
   ReactImg,
   jQueryImg,
-  SvgImg,
   SemanticImg,
   BootstrapImg,
   ReduxImg,
@@ -30,5 +30,7 @@ export {
   MongodbImg,
   MySQLImg,
   NpmImg,
-  GitImg
+  GitImg,
+  PhotoshopImg,
+  FigmaImg
 };

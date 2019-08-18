@@ -220,6 +220,7 @@
 .cn-wrapper li:nth-child(odd) a {
   background: #e94b4b; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
   background: -o-linear-gradient(bottom, #f1c159, #e94b4b);
+  background: -o-linear-gradient(bottom, #f1c159, #e94b4b);
   background: -webkit-gradient(
     linear,
     left bottom,

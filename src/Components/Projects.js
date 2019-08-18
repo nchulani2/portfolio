@@ -19,8 +19,7 @@ export default class Projects extends React.Component {
 
   isInView = item => {
     const rect = item.getBoundingClientRect();
-    console.log(rect.bottom);
-    console.log(window.innerWidth, window.innerHeight);
+
     return (
       rect.top >= 0 &&
       rect.left >= 0 &&

@@ -169,6 +169,39 @@ export default class Projects extends React.Component {
               </a>
             </div>
           </li>
+          <li>
+            <div className="boxEle">
+              <h3>MHW Monsties</h3>
+              <p>
+                A React and Redux built application that displays all current
+                MHW Monsters and their specifics
+              </p>
+              <div>
+                <img
+                  alt="haisky"
+                  className="ui image"
+                  src="https://media.giphy.com/media/YNDeAaA6eg568ruKVi/giphy.gif"
+                />
+              </div>
+              <div className="toolCont">
+                <span>HTML | CSS | JS</span>
+                <span>REACT</span>
+                <span>REDUX</span>
+              </div>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://mhwmonsties.netlify.com">
+                <button className="projButton">Demo</button>
+              </a>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://github.com/nchulani2/mhwmonsties">
+                <button className="projButton">Source</button>
+              </a>
+            </div>
+          </li>
         </ul>
         <div
           className="moreSoon wow fadeInDown"

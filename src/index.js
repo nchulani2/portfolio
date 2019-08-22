@@ -14,10 +14,10 @@ class Index extends Component {
     window.scrollTo(0, 0);
     setTimeout(() => {
       this.hideLoader();
-    }, 500);
+    }, 1000);
     setTimeout(() => {
       document.body.style.background = 'transparent';
-    }, 1200);
+    }, 1000);
   };
 
   render() {
@@ -31,4 +31,4 @@ class Index extends Component {
 
 setTimeout(() => {
   ReactDOM.render(<Index />, document.querySelector('#root'));
-}, 3500);
+}, 4000);

@@ -16,5 +16,5 @@ npm start
 open http://localhost:3000
 ```
 
-**_Note_ The images used in this portfolio are private and will not be accessible when running this locally**
+**_Note_! The images used in this portfolio are private and will not be accessible when running this locally**
 

@@ -2,7 +2,7 @@
 
 **You can find me at [nmchulani.me](https://nmchulani.me)**
 
-**This serves solely for me and is used to display the projects that I've been working on. **
+**This serves solely for me and is used to display the projects that I've been working on.**
 
 ## Development
 

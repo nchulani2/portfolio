@@ -1,6 +1,6 @@
 import React from 'react';
 import scrollIntoView from 'smooth-scroll-into-view-if-needed';
-import bodyImage from '../Images/full_body.png';
+// import bodyImage from '../Images/full_body.png';
 import '../Styles/About.css';
 
 const goToContact = e => {
@@ -26,7 +26,7 @@ const About = () => {
           data-wow-delay="0.5s"
           data-wow-duration="0.5s">
           <div className="myImage" data-wow-delay="0.4s">
-            <img alt="myFace" src={bodyImage} />
+            {/* <img alt="myFace" src={bodyImage} /> */}
             <div className="circle" />
             <div className="circle" />
             <div className="circle" />

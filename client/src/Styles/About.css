@@ -1,0 +1,263 @@
+.aboutEle {
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bolder;
+  font-size: 16px;
+}
+.aboutEle #gridEle {
+  padding-bottom: 50px;
+}
+
+.aboutEle #gridEle .myImage {
+  margin-bottom: 20px;
+}
+.aboutEle #gridEle .myImage img {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(85%, rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0))
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(85%, rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0))
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-transition: all linear 0.15s;
+  -o-transition: all linear 0.15s;
+  transition: all linear 0.15s;
+}
+.aboutEle #gridEle .myImage .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotateZ(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotateZ(45deg);
+  -webkit-transition: all linear 0.15s;
+  -o-transition: all linear 0.15s;
+  transition: all linear 0.15s;
+  border: none;
+}
+.aboutEle #gridEle .myImage .circle:nth-child(2) {
+  width: 250px;
+  height: 250px;
+
+  background: -o-linear-gradient(
+    315deg,
+    rgba(233, 75, 75, 0.4) 60%,
+    transparent 70%
+  );
+
+  background: linear-gradient(
+    135deg,
+    rgba(233, 75, 75, 0.4) 60%,
+    transparent 70%
+  );
+  z-index: -1;
+}
+.aboutEle #gridEle .myImage .circle:nth-child(3) {
+  width: 325px;
+  height: 325px;
+
+  background: -o-linear-gradient(
+    315deg,
+    rgba(233, 75, 75, 0.3) 70%,
+    transparent 80%
+  );
+
+  background: linear-gradient(
+    135deg,
+    rgba(233, 75, 75, 0.3) 70%,
+    transparent 80%
+  );
+  z-index: -2;
+}
+.aboutEle #gridEle .myImage .circle:nth-child(4) {
+  width: 400px;
+  height: 400px;
+
+  background: -o-linear-gradient(
+    315deg,
+    rgba(233, 75, 75, 0.2) 50%,
+    transparent 70%
+  );
+
+  background: linear-gradient(
+    135deg,
+    rgba(233, 75, 75, 0.2) 50%,
+    transparent 70%
+  );
+  z-index: -3;
+}
+
+.aboutEle #gridEle .six.wide.column .previewResCont {
+  padding-top: 15px;
+  letter-spacing: 2px;
+}
+.aboutEle #gridEle .six.wide.column .previewResCont a {
+  color: rgba(255, 75, 75, 0.8);
+  text-decoration: underline;
+}
+
+.aboutEle #resumeCapt {
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.aboutEle .appgoalsEle {
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  line-height: 30px;
+  padding: 40px 10px 50px 10px;
+}
+.aboutEle .appBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100px;
+  height: 150px;
+
+  background: #e94b4b; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -o-linear-gradient(top, #ffb000, #e94b4b);
+  background: -o-linear-gradient(top, #ffb000, #e94b4b);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffb000),
+    to(#e94b4b)
+  );
+  background: -o-linear-gradient(top, #ffb000, #e94b4b);
+  background: linear-gradient(
+    to bottom,
+    #ffb000,
+    #e94b4b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: 30px;
+  margin: 0 auto;
+}
+.aboutEle .appBox i {
+  margin: 0;
+  color: white;
+  line-height: 50px;
+  font-size: 50px;
+}
+.aboutEle .margDaContainer {
+  margin: 20px 0;
+}
+
+.aboutEle .margDaContainer .textBoxEle div {
+  padding: 20px 0;
+  font-family: 'Poiret One', cursive;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.aboutEle .margDaContainer .textBoxEle p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 0 10px;
+}
+.aboutEle #gridEle .infoCont {
+  padding: 0px 10% 50px 10%;
+  letter-spacing: 2px;
+  line-height: 4vh;
+  font-weight: bolder;
+}
+.aboutEle #gridEle .infoCont strong {
+  color: #4183c4;
+}
+.aboutEle #gridEle .infoCont .infoContact {
+  color: rgba(255, 75, 75, 0.8);
+  text-decoration: underline;
+}
+.aboutEle #gridEle .infoCont i.icon {
+  margin: 0 0 0 10px;
+}
+.aboutEle .iframeWrapper {
+  position: relative;
+  height: 0;
+  max-width: 100%;
+  padding-bottom: 100%;
+}
+
+.aboutEle .iframeWrapper .iframer {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+}
+@media (max-width: 850px) {
+  .aboutEle #gridEle .myImage img {
+    width: 200px;
+    height: 300px;
+    -webkit-transition: all linear 0.15s;
+    -o-transition: all linear 0.15s;
+    transition: all linear 0.15s;
+  }
+  .aboutEle #gridEle .myImage .circle:nth-child(2) {
+    width: 100px;
+    height: 100px;
+  }
+  .aboutEle #gridEle .myImage .circle:nth-child(3) {
+    width: 175px;
+    height: 175px;
+  }
+  .aboutEle #gridEle .myImage .circle:nth-child(4) {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 450px) {
+  .infoCont {
+    padding: 0px 3vw 10px 3vw;
+    letter-spacing: 2 px;
+    line-height: 3.5vh;
+    font-size: 12px;
+  }
+  .aboutEle .margDaContainer .textBoxEle div {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .aboutEle .margDaContainer .textBoxEle p {
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding: 0 10px;
+  }
+  .aboutEle #gridEle .six.wide.column .previewResCont {
+    display: none;
+  }
+}

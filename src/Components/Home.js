@@ -61,14 +61,19 @@ export default class Home extends Component {
                   enable: false
                 }
               },
+              color: {
+                value: ['#ff4b4b']
+              },
+
               size: {
-                value: 3,
+                value: 5,
                 random: true,
                 anim: {
                   speed: 4,
                   size_min: 0.3
                 }
               },
+
               line_linked: {
                 enable: false
               },

@@ -10,6 +10,7 @@ import Contact from './Contact';
 import Footer from './Footer';
 import '../Styles/App.css';
 import WOW from 'wow.js';
+import { toast } from 'react-toastify';
 
 export default class App extends React.Component {
   componentDidMount = e => {
@@ -23,6 +24,9 @@ export default class App extends React.Component {
       scrollContainer: null // optional scroll container selector, otherwise use window
     });
     wow.init();
+    toast.configure({
+      pauseOnHover: false
+    });
   };
 
   showNavBar = e => {

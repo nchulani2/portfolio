@@ -39,7 +39,10 @@ export default class Projects extends React.Component {
           <li>
             <div className="boxEle">
               <h3>Yelpcamp</h3>
-              <p>A CRUD based web application</p>
+              <p>
+                A Full-stack web application that features basic CRUD
+                implementation
+              </p>
               <div>
                 <img
                   alt="yelpcamp"
@@ -71,7 +74,10 @@ export default class Projects extends React.Component {
           <li>
             <div className="boxEle">
               <h3>Navsearch</h3>
-              <p className="backendImp">An Image search web application</p>
+              <p className="backendImp">
+                An Image search engine that uses to Unsplash API to retrieve
+                images based on the user's input
+              </p>
               <div
                 style={{
                   color: 'rgba(233, 75, 75, 1)'
@@ -88,6 +94,7 @@ export default class Projects extends React.Component {
               <div className="toolCont">
                 <span>HTML | CSS | JS</span>
                 <span>REACT</span>
+                <span>REDUX</span>
               </div>
               <a
                 rel="noopener noreferrer"
@@ -107,7 +114,10 @@ export default class Projects extends React.Component {
           <li>
             <div className="boxEle">
               <h3>Haisky</h3>
-              <p>A Weather app with geo-suggest implementation</p>
+              <p>
+                A Weather app that was built using Google's Geocoder and Places
+                API, also features geo-suggest implementation
+              </p>
               <div>
                 <img
                   alt="haisky"
@@ -137,7 +147,9 @@ export default class Projects extends React.Component {
           <li>
             <div className="boxEle">
               <h3>Chuvids</h3>
-              <p className="backendImp">A Youtube look-alike web application</p>
+              <p className="backendImp">
+                A Video web platform built with the Youtube API
+              </p>
               <div
                 style={{
                   color: 'rgba(233, 75, 75, 1)'
@@ -171,10 +183,10 @@ export default class Projects extends React.Component {
           </li>
           <li>
             <div className="boxEle">
-              <h3>MHW Monsties</h3>
+              <h3>MHWU</h3>
               <p>
-                A React and Redux built application that displays all current
-                MHW Monsters and their specifics
+                A React and Redux built application that acts as a database for
+                Monster Hunter World
               </p>
               <div>
                 <img
@@ -191,7 +203,7 @@ export default class Projects extends React.Component {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://mhwmonsties.netlify.com">
+                href="https://mhwu.netlify.com">
                 <button className="projButton">Demo</button>
               </a>
               <a

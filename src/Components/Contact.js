@@ -19,6 +19,7 @@ export default class Contact extends React.Component {
     this.setState({ loading: true });
     // NOTE DO NOT WANT TO PREVENT DEFAULT HERE IF YOU ARE TRYING TO RUN AN "onSubmit" and "action" on a form
     const { name, text, email } = this.state;
+    // const proxyURL = 'https://cors-anywhere.herokuapp.com/';
     e.preventDefault();
     var clientDetails = {
       name: name,
@@ -29,15 +30,14 @@ export default class Contact extends React.Component {
     await axios
       .post(BASE_URL, clientDetails)
       .then(res => {
-        // If errors returned from validation
-        if (res.status === 200) {
+        if (res.data.errors) {
           this.setState({
             loading: false
           });
           res.data.errors.map(err => this.notifyErrs(err));
 
           // Success message
-        } else {
+        } else if (res.data.success) {
           this.setState({
             name: '',
             email: '',

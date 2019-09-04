@@ -8,8 +8,8 @@ const loader = document.body.querySelector('.loader');
 // TO AVOID CORS ERROR
 export const BASE_URL =
   process.env.NODE_ENV !== 'production'
-    ? 'http://localhost:4000/portfolio/email'
-    : process.env.PRODUCTION_URL;
+    ? 'http://localhost:4000/'
+    : 'https://backend-form-submit.herokuapp.com/';
 
 class Index extends Component {
   hideLoader = () => {

@@ -4,7 +4,10 @@ const Page = props => {
   return (
     <div
       className={`page ${props.className}`}
-      style={{ height: `${props.height}`, width: '100%' }}>
+      style={{
+        height: props.height,
+        width: '100%'
+      }}>
       {props.children}
     </div>
   );

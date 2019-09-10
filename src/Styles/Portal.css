@@ -1,0 +1,139 @@
+/* -------------------------------------------------------------------------- */
+/* PORTAL */
+.portal {
+  width: 440px;
+  height: 440px;
+  -webkit-transition: all ease 0.15s;
+  -o-transition: all ease 0.15s;
+  transition: all ease 0.15s;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  z-index: -4;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.portal .svgPortal {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: rotatify 8s linear forwards infinite;
+  animation: rotatify 8s linear forwards infinite;
+}
+
+@-webkit-keyframes rotatify {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotatify {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.portal .bulbs {
+  -webkit-animation: warning 2s ease infinite forwards;
+  animation: warning 2s ease infinite forwards;
+  fill-opacity: 0.5;
+}
+
+@-webkit-keyframes warning {
+  0% {
+    fill-opacity: 0.5;
+  }
+  50% {
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 0.5;
+  }
+}
+
+@keyframes warning {
+  0% {
+    fill-opacity: 0.5;
+  }
+  50% {
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 0.5;
+  }
+}
+
+.portal .portalBack stop:nth-child(2) {
+  -webkit-animation: fluctuate 7s linear infinite forwards;
+  animation: fluctuate 7s linear infinite forwards;
+}
+
+@-webkit-keyframes fluctuate {
+  0% {
+    stop-color: rgba(233, 75, 75, 0.7);
+    stop-opacity: 0;
+  }
+  35% {
+    stop-color: rgb(233, 75, 75);
+    stop-opacity: 1;
+  }
+
+  100% {
+    stop-color: rgb(233, 75, 75);
+    stop-opacity: 0;
+  }
+}
+
+@keyframes fluctuate {
+  0% {
+    stop-color: rgb(233, 75, 75);
+    stop-opacity: 0.5;
+  }
+  25% {
+    stop-color: rgba(233, 73, 10);
+    stop-opacity: 0.7;
+  }
+  50% {
+    stop-color: #ff7b00;
+    stop-opacity: 1;
+  }
+
+  75% {
+    stop-color: rgb(233, 73, 10);
+
+    stop-opacity: 0.7;
+  }
+
+  100% {
+    stop-color: rgb(233, 75, 75);
+    stop-opacity: 0.5;
+  }
+}
+
+@media (max-width: 850px) {
+  .portal {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .portal {
+    width: 270px;
+    height: 270px;
+  }
+}

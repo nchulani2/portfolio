@@ -14,8 +14,11 @@ import { toast } from 'react-toastify';
 
 export default class App extends React.Component {
   componentDidMount = e => {
+    setTimeout(() => {
+      document.body.style.background = 'transparent';
+    }, 850);
     window.scrollTo(0, 0);
-    window.addEventListener('scroll', this.showNavBar);
+    window.addEventListener('scroll', this.showNavBar, { passive: true });
     var wow = new WOW({
       boxClass: 'wow', // animated element css class (default is wow)
       animateClass: 'animated', // animation css class (default is animated)

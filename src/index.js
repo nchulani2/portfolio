@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
 
 import App from './Components/App';
@@ -9,20 +9,4 @@ export const BASE_URL =
     ? 'http://localhost:4000/'
     : 'https://backend-form-submit.herokuapp.com/';
 
-class Index extends Component {
-  componentDidMount = () => {
-    setTimeout(() => {
-      document.body.style.background = 'transparent';
-    }, 850);
-  };
-
-  render() {
-    return (
-      <div className="index">
-        <App />
-      </div>
-    );
-  }
-}
-
-render(<Index />, document.querySelector('#root'));
+render(<App />, document.querySelector('#root'));

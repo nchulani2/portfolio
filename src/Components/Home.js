@@ -10,15 +10,15 @@ import scrollIntoView from 'smooth-scroll-into-view-if-needed';
 import '../Styles/Home.css';
 
 export default class Home extends Component {
-  state = { typeDelay: 40 };
+  state = { typeDelay: 40, typeSpeed: 70 };
   speedUpTyper = () => {
-    this.setState({ typeDelay: 0 });
+    this.setState({ typeDelay: 0, typeSpeed: 150 });
   };
   typingDone = () => {
     const homeButtons = document.querySelectorAll('.homebuttonEle');
     homeButtons.forEach(button => {
       button.classList.remove('hideIt');
-      button.classList.add('animated', 'flipInX', 'delay-0s');
+      button.classList.add('animated', 'flipInX', 'delay-0s', 'faster');
     });
   };
 
@@ -107,11 +107,11 @@ export default class Home extends Component {
 
         <div className="flexContainer">
           <Typist
-            startDelay={1500}
+            startDelay={1000}
             onTypingDone={this.typingDone}
             className="typewriterEle"
             avgTypingDelay={this.state.typeDelay}
-            avgTypingSpeed={70}>
+            avgTypingSpeed={this.state.typeSpeed}>
             Hello, I'm <span className="mynameEle">Naveen Chulani</span>.
             <br />
             Full-stack Developer & Electrical Engineer

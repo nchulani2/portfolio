@@ -1,6 +1,6 @@
 import React from 'react';
 import scrollIntoView from 'smooth-scroll-into-view-if-needed';
-// import bodyImage from '../Images/full_body.png';
+import bodyImage from '../Images/full_body.png';
 import Portal from './Portal';
 import '../Styles/About.css';
 
@@ -29,7 +29,7 @@ const About = () => {
           data-aos-easing="ease"
           data-aos-delay="400">
           <div className="myImage">
-            {/* <img alt="myFace" src={bodyImage} /> */}
+            <img alt="myFace" src={bodyImage} />
             <Portal></Portal>
           </div>
           <div className="infoCont">

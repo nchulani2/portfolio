@@ -42,15 +42,26 @@ export default class Navbar extends React.Component {
     const projects = document.querySelector('.projects');
     const contact = document.querySelector('.contact');
 
-    if (anchor === '#about') {
-      this.goIntoView(about, wrapper, overlay, buttonEle);
-    } else if (anchor === '#skills') {
-      this.goIntoView(skills, wrapper, overlay, buttonEle);
-    } else if (anchor === '#home') {
-      this.goIntoView(home, wrapper, overlay, buttonEle);
-    } else if (anchor === '#projects') {
-      this.goIntoView(projects, wrapper, overlay, buttonEle);
-    } else this.goIntoView(contact, wrapper, overlay, buttonEle);
+    switch (anchor) {
+      case '#about':
+        this.goIntoView(about, wrapper, overlay, buttonEle);
+        break;
+      case '#skills':
+        this.goIntoView(skills, wrapper, overlay, buttonEle);
+        break;
+      case '#home':
+        this.goIntoView(home, wrapper, overlay, buttonEle);
+        break;
+      case '#projects':
+        this.goIntoView(projects, wrapper, overlay, buttonEle);
+        break;
+      case '#contact':
+        this.goIntoView(contact, wrapper, overlay, buttonEle);
+        break;
+      default:
+        this.goIntoView(home, wrapper, overlay, buttonEle);
+        break;
+    }
   };
 
   goIntoView = (element, wrapper, overlay, buttonEle) => {

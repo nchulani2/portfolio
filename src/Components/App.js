@@ -19,7 +19,7 @@ export default class App extends React.Component {
     }, 850);
     window.scrollTo(0, 0);
     window.addEventListener('scroll', this.showNavBar, { passive: true });
-    AOS.init();
+    AOS.init({ disable: 'mobile' });
 
     toast.configure({
       pauseOnHover: false

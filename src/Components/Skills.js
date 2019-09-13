@@ -1,22 +1,22 @@
 import React from 'react';
-import {
-  HtmlFiveImg,
-  CssThreeImg,
-  JavascriptImg,
-  ReactImg,
-  jQueryImg,
-  SemanticImg,
-  BootstrapImg,
-  ReduxImg,
-  NodeImg,
-  ExpressImg,
-  MongodbImg,
-  MySQLImg,
-  NpmImg,
-  GitImg,
-  PhotoshopImg,
-  FigmaImg
-} from './ImageImports';
+// import {
+//   HtmlFiveImg,
+//   CssThreeImg,
+//   JavascriptImg,
+//   ReactImg,
+//   jQueryImg,
+//   SemanticImg,
+//   BootstrapImg,
+//   ReduxImg,
+//   NodeImg,
+//   ExpressImg,
+//   MongodbImg,
+//   MySQLImg,
+//   NpmImg,
+//   GitImg,
+//   PhotoshopImg,
+//   FigmaImg
+// } from './ImageImports';
 import '../Styles/Skills.css';
 
 const Skills = () => {
@@ -49,13 +49,13 @@ const Skills = () => {
             <div className="ui grid container">
               <div className="eight wide column">
                 <div className="toolCont">
-                  <img alt="HTML5" src={HtmlFiveImg} />
+                  {/* <img alt="HTML5" src={HtmlFiveImg} /> */}
                   <span className="tooltiptext">HTML 5</span>
                 </div>
               </div>
               <div className="eight wide column">
                 <div className="toolCont">
-                  <img alt="CSS3" src={CssThreeImg} />
+                  {/* <img alt="CSS3" src={CssThreeImg} /> */}
                   <span className="tooltiptext">CSS 3</span>
                 </div>
               </div>
@@ -65,13 +65,13 @@ const Skills = () => {
             <div className="ui grid container">
               <div className="eight wide column">
                 <div className="toolCont">
-                  <img alt="Javascript" src={JavascriptImg} />
+                  {/* <img alt="Javascript" src={JavascriptImg} /> */}
                   <span className="tooltiptext">Javascript</span>
                 </div>
               </div>
               <div className="eight wide column">
                 <div className="toolCont">
-                  <img alt="React" src={ReactImg} />
+                  {/* <img alt="React" src={ReactImg} /> */}
                   <span className="tooltiptext">React</span>
                 </div>
               </div>
@@ -83,13 +83,13 @@ const Skills = () => {
             <div className="ui grid container">
               <div className="eight wide column">
                 <div className="toolCont">
-                  <img alt="jQuery" src={jQueryImg} />
+                  {/* <img alt="jQuery" src={jQueryImg} /> */}
                   <span className="tooltiptext">jQuery</span>
                 </div>
               </div>
               <div className="eight wide column">
                 <div className="toolCont">
-                  <img alt="Redux" src={FigmaImg} />
+                  {/* <img alt="Redux" src={FigmaImg} /> */}
                   <span className="tooltiptext">Figma</span>
                 </div>
               </div>
@@ -99,13 +99,13 @@ const Skills = () => {
             <div className="ui grid container">
               <div className="eight wide column">
                 <div className="toolCont">
-                  <img alt="Semantic UI" src={SemanticImg} />
+                  {/* <img alt="Semantic UI" src={SemanticImg} /> */}
                   <span className="tooltiptext">Semantic UI</span>
                 </div>
               </div>
               <div className="eight wide column">
                 <div className="toolCont">
-                  <img alt="Bootstrap" src={BootstrapImg} />
+                  {/* <img alt="Bootstrap" src={BootstrapImg} /> */}
                   <span className="tooltiptext">Bootstrap</span>
                 </div>
               </div>
@@ -117,13 +117,13 @@ const Skills = () => {
             <div className="ui grid container">
               <div className="eight wide column">
                 <div className="toolCont">
-                  <img alt="Redux" src={ReduxImg} />
+                  {/* <img alt="Redux" src={ReduxImg} /> */}
                   <span className="tooltiptext">Redux</span>
                 </div>
               </div>
               <div className="eight wide column">
                 <div className="toolCont">
-                  <img alt="Redux" src={PhotoshopImg} />
+                  {/* <img alt="Redux" src={PhotoshopImg} /> */}
                   <span className="tooltiptext">Adobe Photoshop</span>
                 </div>
               </div>
@@ -149,13 +149,13 @@ const Skills = () => {
             data-aos-easing="ease">
             <div className="eight wide column">
               <div className="toolCont">
-                <img alt="Node.js" src={NodeImg} />
+                {/* <img alt="Node.js" src={NodeImg} /> */}
                 <span className="tooltiptext">node.js</span>
               </div>
             </div>
             <div className="eight wide column">
               <div className="toolCont">
-                <img alt="Express" src={ExpressImg} />
+                {/* <img alt="Express" src={ExpressImg} /> */}
                 <span className="tooltiptext">express</span>
               </div>
             </div>
@@ -178,14 +178,14 @@ const Skills = () => {
             data-aos-easing="ease">
             <div className="eight wide column">
               <div className="toolCont">
-                <img alt="MongoDB" src={MongodbImg} />
+                {/* <img alt="MongoDB" src={MongodbImg} /> */}
 
                 <span className="tooltiptext">MongoDB</span>
               </div>
             </div>
             <div className="eight wide column">
               <div className="toolCont">
-                <img alt="MySQL" src={MySQLImg} />
+                {/* <img alt="MySQL" src={MySQLImg} /> */}
                 <span className="tooltiptext">MySQL</span>
               </div>
             </div>
@@ -207,13 +207,13 @@ const Skills = () => {
             data-aos-easing="ease">
             <div className="eight wide column">
               <div className="toolCont">
-                <img alt="npm" src={NpmImg} />
+                {/* <img alt="npm" src={NpmImg} /> */}
                 <span className="tooltiptext">npm</span>
               </div>
             </div>
             <div className="eight wide column">
               <div className="toolCont">
-                <img alt="git" src={GitImg} />
+                {/* <img alt="git" src={GitImg} /> */}
                 <span className="tooltiptext">git</span>
               </div>
             </div>

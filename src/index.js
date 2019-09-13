@@ -9,4 +9,6 @@ export const BASE_URL =
     ? 'http://localhost:4000/'
     : 'https://backend-form-submit.herokuapp.com/';
 
-render(<App />, document.querySelector('#root'));
+setTimeout(() => {
+  render(<App />, document.querySelector('#root'));
+}, 200);

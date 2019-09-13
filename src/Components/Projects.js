@@ -33,9 +33,10 @@ export default class Projects extends React.Component {
     return (
       <div id="projectsEle">
         <ul
-          className="wow fadeIn"
-          data-wow-delay="0.1s"
-          data-wow-duration="0.3s">
+          data-aos="zoom-in-up"
+          data-aos-duration="500"
+          data-aos-easing="ease"
+          data-aos-delay="250">
           <li>
             <div className="boxEle">
               <h3>Yelpcamp</h3>
@@ -216,9 +217,12 @@ export default class Projects extends React.Component {
           </li>
         </ul>
         <div
-          className="moreSoon wow fadeInDown"
-          data-wow-delay="0.2s"
-          data-wow-duration="0.5s">
+          className="moreSoon"
+          data-aos="fade"
+          data-aos-duration="500"
+          data-aos-easing="ease"
+          data-aos-delay="150"
+          data-aos-offset="150">
           <div />
           <div />
           <div />

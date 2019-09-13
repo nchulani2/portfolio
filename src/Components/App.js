@@ -9,7 +9,7 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
 import '../Styles/App.css';
-import WOW from 'wow.js';
+import AOS from 'aos';
 import { toast } from 'react-toastify';
 
 export default class App extends React.Component {
@@ -19,21 +19,15 @@ export default class App extends React.Component {
     }, 850);
     window.scrollTo(0, 0);
     window.addEventListener('scroll', this.showNavBar, { passive: true });
-    var wow = new WOW({
-      boxClass: 'wow', // animated element css class (default is wow)
-      animateClass: 'animated', // animation css class (default is animated)
-      offset: 0, // distance to the element when triggering the animation (default is 0)
-      mobile: true, // trigger animations on mobile devices (default is true)
-      live: true, // act on asynchronously loaded content (default is true)
-      scrollContainer: null // optional scroll container selector, otherwise use window
-    });
-    wow.init();
+    AOS.init();
+
     toast.configure({
       pauseOnHover: false
     });
   };
 
   showNavBar = e => {
+    AOS.refresh();
     const navbutton = document.querySelector('#cn-button');
     const navwrapper = document.querySelector('#cn-wrapper');
     const topOfAbout = document.querySelector('.about').offsetTop - 50;

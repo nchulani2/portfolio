@@ -12,9 +12,11 @@ const Cont = props => {
       />
       <div
         style={{ color: `${props.captionCol}` }}
-        className="captionEle wow bounceInLeft"
-        data-wow-delay="0.1s"
-        data-wow-duration="0.7s">
+        className="captionEle"
+        data-aos="flip-down"
+        data-aos-duration="500"
+        data-aos-easing="ease"
+        data-aos-delay="150">
         {props.caption}
       </div>
       <div
@@ -22,9 +24,11 @@ const Cont = props => {
           background: `${props.captionBorder}`,
           margin: `${props.captionMargin}`
         }}
-        className="captionBorder wow bounceInLeft"
-        data-wow-delay="0.2s"
-        data-wow-duration="0.7s"
+        className="captionBorder"
+        data-aos="fade-left"
+        data-aos-duration="300"
+        data-aos-easing="ease"
+        data-aos-delay="500"
       />
 
       {props.children}

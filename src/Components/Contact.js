@@ -78,8 +78,18 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div className="contactEle">
-        <div className="formEle wow bounceInUp">
-          <h3 className="enquireEle">
+        <div
+          className="formEle"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-easing="ease"
+          data-aos-delay="350">
+          <h3
+            className="enquireEle"
+            data-aos="flip-down"
+            data-aos-duration="500"
+            data-aos-easing="ease"
+            data-aos-delay="50">
             Got a question? I'll respond within 24 hours!
             <br />
             <br /> Use the form below or reach me at{' '}

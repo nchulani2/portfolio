@@ -1,6 +1,6 @@
 import React from 'react';
 import scrollIntoView from 'smooth-scroll-into-view-if-needed';
-// import bodyImage from '../Images/full_body.png';
+import bodyImage from '../Images/full_body.png';
 import Portal from './Portal';
 import '../Styles/About.css';
 
@@ -23,11 +23,13 @@ const About = () => {
     <div className="aboutEle">
       <div className="ui stackable two column grid" id="gridEle">
         <div
-          className="ten wide column wow slideInUp"
-          data-wow-delay="0.5s"
-          data-wow-duration="0.5s">
+          className="ten wide column"
+          data-aos="fade-up-right"
+          data-aos-duration="600"
+          data-aos-easing="ease"
+          data-aos-delay="400">
           <div className="myImage" data-wow-delay="0.4s">
-            {/* <img alt="myFace" src={bodyImage} /> */}
+            <img alt="myFace" src={bodyImage} />
             <Portal></Portal>
           </div>
           <div className="infoCont">
@@ -47,9 +49,11 @@ const About = () => {
           </div>
         </div>
         <div
-          className="six wide column wow slideInUp"
-          data-wow-delay="0.5s"
-          data-wow-duration="0.5s">
+          className="six wide column "
+          data-aos="fade-up-left"
+          data-aos-duration="600"
+          data-aos-easing="ease"
+          data-aos-delay="400">
           <h2 id="resumeCapt">Resume</h2>
           <div className="iframeWrapper">
             <iframe
@@ -71,16 +75,19 @@ const About = () => {
         </div>
       </div>
       <div
-        className="appgoalsEle wow fadeIn"
-        data-wow-delay="0.3s"
-        data-wow-duration="0.7s">
+        className="appgoalsEle "
+        data-aos="fade-up"
+        data-aos-duration="400"
+        data-aos-easing="ease">
         My Desirable App Features
       </div>
       <div className="ui stackable two column grid">
         <div
-          className="eight wide column wow bounceInLeft"
-          data-wow-delay="0.2s"
-          data-wow-duration="0.5s">
+          className="eight wide column "
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-easing="ease"
+          data-aos-delay="200">
           <div className="ui grid container margDaContainer">
             <div className="eight wide column">
               <div className="appBox">
@@ -103,9 +110,11 @@ const About = () => {
           </div>
         </div>
         <div
-          className="eight wide column wow bounceInRight"
-          data-wow-delay="0.2s"
-          data-wow-duration="0.5s">
+          className="eight wide column "
+          data-aos="fade-left"
+          data-aos-duration="500"
+          data-aos-easing="ease"
+          data-aos-delay="200">
           <div className="ui grid container margDaContainer">
             <div className="eight wide column">
               <div className="appBox">
